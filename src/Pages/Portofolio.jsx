@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
@@ -86,7 +85,7 @@ export default function Portofolio() {
                 </Tabs>
             </AppBar>
             
-            <SwipeableViews axis={theme.direction === "rtl" ? "x-reverse" : "x"} index={value} onChangeIndex={setValue}>
+            <div axis={theme.direction === "rtl" ? "x-reverse" : "x"} index={value} onChangeIndex={setValue}>
                 <TabPanel value={value} index={0} dir={theme.direction}>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
                         {projects.map((proj) => (<div key={proj.id} className="flex" data-aos={proj.aos} data-aos-duration="1000"><CardProject Img={proj.Img} Title={proj.Title} Description={proj.Description} Link={proj.Link} id={proj.id}/></div>))}
@@ -106,7 +105,7 @@ export default function Portofolio() {
                         </div>
                     </div>
                 </TabPanel>
-            </SwipeableViews>
+            </div>
         </Box>
     </div>
   );
