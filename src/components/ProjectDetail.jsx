@@ -4,6 +4,10 @@ import {
   ArrowLeft, ExternalLink, Github, Code2, Star,
   ChevronRight, Layers, Layout, Globe, Package, Cpu, Code,
 } from "lucide-react";
+import folioxImg from "../assets/foliox.jpg";
+import estateImg from "../assets/estate.jpg";
+import farmerImg from "../assets/farmer.jpg";
+import inventoryImg from "../assets/inventory.jpg";
 
 // --- Main Data Source ---
 // THE FIX: This array's order and IDs now EXACTLY MATCH the order from your portfolio showcase page.
@@ -11,7 +15,7 @@ const projectsData = [
   {
     id: 1, // ID for the FIRST project on your portfolio (FolioX)
     Title: "FolioX – Financial Portfolio Management",
-    Img: "/src/assets/foliox.jpg",
+    Img: folioxImg,
     Description: "Built a web platform using Flutter (frontend) and Django + Firebase (backend) for stock news and tracking. This was my final year project.",
     Link: "https://github.com/pranavmohan15/FOLIOX_ORG",
     Github: "https://github.com/pranavmohan15/FOLIOX_ORG",
@@ -27,7 +31,7 @@ const projectsData = [
   {
     id: 2, // ID for the SECOND project (EstateEase)
     Title: "EstateEase – Real Estate UI",
-    Img: "/src/assets/estate.jpg",
+    Img: estateImg,    
     Description: "Developed a mobile UI clone using React Native, Expo, and NativeWind based on a Figma design. Focused on clean architecture, reusable components, and responsive layout.",
     Link: "https://github.com/pranavmohan15/Estate-Ease",
     Github: "https://github.com/pranavmohan15/Estate-Ease",
@@ -42,7 +46,7 @@ const projectsData = [
   {
     id: 3, // ID for the THIRD project (Farmers Portal)
     Title: "Farmers Portal",
-    Img: "/src/assets/farmer.jpg",
+    Img: farmerImg,
     Description: "Created a bidding and product listing system using React and Node.js to connect farmers with buyers. This academic project aimed to enable transparent pricing and improve supply chain efficiency through a user-friendly portal.",
     Link: "https://github.com/pranavmohan15/Farmers_portal",
     Github: "https://github.com/pranavmohan15/Farmersportal",
@@ -57,7 +61,7 @@ const projectsData = [
   {
     id: 4, // ID for the FOURTH project (Inventorysys)
     Title: "Inventorysys – Product Inventory System",
-    Img: "/src/assets/inventory.jpg",
+    Img: inventoryImg,
     Description: "Developed a full-stack inventory management web app using React.js and Django REST Framework with a modern “frosted glass” UI.",
     Link: "https://github.com/pranavmohan15/inventorysys",
     Github: "https://github.com/pranavmohan15/inventorysys",
